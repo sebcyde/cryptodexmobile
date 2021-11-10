@@ -14,9 +14,18 @@ function BNS() {
 				response.data.coins.map((Coins) => {
 					TrendingCoins.push(Coins);
 				});
-            });
-        console.log(TrendingCoins)
-		// return () => {};
+			});
+		console.log(TrendingCoins);
+		return () => {
+			TrendingCoins.forEach((TrendingCoin) => {
+				return (
+					<div className="returnedCoinContainer">
+                        <h1 className="returnedCoinTitle"></h1>
+                        
+					</div>
+				);
+			});
+		};
 	}, [LoadingScreen]);
 	return (
 		<div id="scroll-container">
