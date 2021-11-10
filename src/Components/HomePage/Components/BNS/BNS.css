@@ -1,0 +1,46 @@
+#scroll-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: aqua;
+  background-color: black;
+  border-bottom: 1px solid aqua;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#scroll-text {
+  /* animation properties */
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 10s linear infinite;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* for Firefox */
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+/*# sourceMappingURL=BNS.css.map */

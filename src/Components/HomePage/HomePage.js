@@ -1,10 +1,11 @@
 import React from 'react';
+import BNS from './Components/BNS/BNS';
 import './HomePage.css';
 
 function HomePage() {
 	return (
 		<div className="HomePageScreen">
-			<h1 className="HomePageTitle">HomPage</h1>
+			<BNS />
 		</div>
 	);
 }

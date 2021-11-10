@@ -1,9 +1,18 @@
 .LoadingScreen {
+	width: 100vw;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 	.LoadingGif {
-		height: 5em;
-		width: auto;
+		width: 5em;
+		height: auto;
 	}
 	.LoadingTitle {
 		color: white;
+		font-size: medium;
 	}
 }
