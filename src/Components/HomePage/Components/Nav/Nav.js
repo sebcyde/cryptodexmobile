@@ -11,15 +11,19 @@ function NavComponent() {
 			<Navbar
 				alignLinks="right"
 				brand={
-					<a className="brand-logo right" href="#">
-						Logo
+					<a className="brand-logo" href="#">
+						<i class="material-icons">add</i>
 					</a>
 				}
 				id="mobile-nav"
-				menuIcon={<Icon>menu</Icon>}
+				menuIcon={
+					<Icon>
+						<i class="material-icons">dehaze</i>
+					</Icon>
+				}
 				options={{
 					draggable: true,
-					edge: 'right',
+					edge: 'left',
 					inDuration: 250,
 					onCloseEnd: null,
 					onCloseStart: null,
@@ -29,7 +33,7 @@ function NavComponent() {
 					preventScrolling: true,
 				}}
 			>
-				<NavItem onClick={function noRefCheck() {}}>Getting started</NavItem>
+				<NavItem href="">Getting started</NavItem>
 				<NavItem href="components.html">Components</NavItem>
 			</Navbar>
 		</div>
