@@ -15,10 +15,8 @@
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   -webkit-animation: my-animation 15s linear infinite;
-  animation: my-animation 10s linear infinite;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  animation: my-animation 8s linear infinite;
+  width: 100vw;
 }
 
 /* for Firefox */
